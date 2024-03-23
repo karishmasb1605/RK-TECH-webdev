@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TO-DO WEBAPP</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lobster&display=swap">
+    <link rel="stylesheet" href="Todo_webapp.css" />
+
+</head>
+
+<body>
+    
+    <div id="app">
+        <h1 class="glow">TO-DO WEBAPP</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" required placeholder="  New Task">
+            <button class="button button1" onclick="addTask()">Add Task</button>
+        </form>
+
+        <div class="task-list-container">
+            <div class="pending-list">
+                <h2 class="neonText">Pending<br>Tasks<br>◕⁠_⁠◕</h2>
+                <ul id="pendingTasks"></ul>
+            </div><br><br><br><br><br><br>
+
+
+
+            <div class="completed-list">
+                <h2>Completed<br>Tasks<br>｡⁠◕⁠‿⁠◕⁠｡ </h2>
+                <ul id="completedTasks"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="Todo_webapp.js"></script>
+</body>
+
+</html>
